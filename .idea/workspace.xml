@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b49b8b-d4b4-4f75-80d2-4ac9ff6074a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CodeSamples.iml" afterPath="$PROJECT_DIR$/.idea/CodeSamples.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/git" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/003_reverse_words_in_string.py" afterPath="$PROJECT_DIR$/Python/003_reverse_words_in_string.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/004_factorial_with_recursion.py" afterPath="$PROJECT_DIR$/Python/004_factorial_with_recursion.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/005_bubble_sorting.py" afterPath="$PROJECT_DIR$/Python/005_bubble_sorting.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/006_pyramid_total.py" afterPath="$PROJECT_DIR$/Python/006_pyramid_total.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/007_string_palindrome_check.py" afterPath="$PROJECT_DIR$/Python/007_string_palindrome_check.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/008_string_char_occurrence.py" afterPath="$PROJECT_DIR$/Python/008_string_char_occurrence.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/001_reverse_string.rb" afterPath="$PROJECT_DIR$/Ruby/001_reverse_string.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/002_reverse_words_order.rb" afterPath="$PROJECT_DIR$/Ruby/002_reverse_words_order.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/003_reverse_words_in_string.rb" afterPath="$PROJECT_DIR$/Ruby/003_reverse_words_in_string.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/004_factorial_with_recursion.rb" afterPath="$PROJECT_DIR$/Ruby/004_factorial_with_recursion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/005_bubble_sorting.rb" afterPath="$PROJECT_DIR$/Ruby/005_bubble_sorting.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/006_pyramid_total.rb" afterPath="$PROJECT_DIR$/Ruby/006_pyramid_total.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/007_string_palindrome_check.rb" afterPath="$PROJECT_DIR$/Ruby/007_string_palindrome_check.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ruby/008_string_char_occurrence.rb" afterPath="$PROJECT_DIR$/Ruby/008_string_char_occurrence.rb" />
     </list>
     <ignored path="CodeSamples.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Ruby/004_reverse_words_order_and_words.rb" />
         <option value="$PROJECT_DIR$/Ruby/001_reverse_string.rb" />
         <option value="$PROJECT_DIR$/Ruby/002_reverse_words_order.rb" />
@@ -115,6 +98,7 @@
         <option value="$PROJECT_DIR$/Python/006_pyramid_total.py" />
         <option value="$PROJECT_DIR$/Python/008_string_char_occurrence.py" />
         <option value="$PROJECT_DIR$/Ruby/008_string_char_occurrence.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -124,9 +108,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="18" />
-    <option name="y" value="23" />
-    <option name="width" value="1422" />
+    <option name="x" value="81" />
+    <option name="y" value="26" />
+    <option name="width" value="1354" />
     <option name="height" value="811" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -154,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,6 +186,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -360,10 +344,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="18" y="23" width="1422" height="811" extended-state="0" />
-    <editor active="true" />
+    <frame x="81" y="26" width="1354" height="811" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2644163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27769572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24088542" sideWeight="0.5019199" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
