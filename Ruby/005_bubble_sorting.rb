@@ -4,8 +4,10 @@
 ######################################################################
 
 
-# sorting array by 'bubble' method in direct order
+# sorting array by 'bubble' method in ascending order
 def bubble_sort_1(nums)
+  return nums if nums.length <= 1
+
   for i in 0..(nums.length - 1)
     min, index = nums[i], i
     for j in (i + 1)..(nums.length - 1)
@@ -17,9 +19,28 @@ def bubble_sort_1(nums)
       nums[i], nums[index] = nums[index], nums[i]
     end
   end
+
+  nums
+end
+
+# sorting array by 'bubble' method in ascending order
+def bubble_sort_2(nums)
+  return nums if nums.length <= 1
+
+  (nums.length-1).times do
+    for i in 0..(nums.length - 2)
+      if nums[i] > nums[i+1]
+        nums[i], nums[i+1] = nums[i+1], nums[i]
+      end
+    end
+  end
+
   nums
 end
 
 
 nums = [10, 2, 3, 1, 7, 6, 8, 4, 5, 9]
-puts bubble_sort_1(nums)
+print bubble_sort_1(nums)
+puts ''
+print bubble_sort_2(nums)
+puts ''

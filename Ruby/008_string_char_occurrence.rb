@@ -3,15 +3,17 @@
 # times character appears in string
 ######################################################################
 
+# this method uses built-in function 'scan'
 def char_counter_1(string, char)
-  sum = 0
   string.scan(/#{char}/).length
 end
 
+# this method uses built-in function 'count'
 def char_counter_2(string, char)
   string.count(char)
 end
 
+# this method uses built-in function 'split'
 def char_counter_3(string, char)
   counter = 0
   string.split('').each do |key|
