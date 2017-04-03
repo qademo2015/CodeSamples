@@ -35,7 +35,7 @@ def reverse_string_4(s):
         result += s[i]
     return result
 
-
+# this method is main
 def main():
     string = 'Hello world!'
     print(string)
