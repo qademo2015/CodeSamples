@@ -14,8 +14,11 @@ end
 def reverse_string_2(string)
   string = string.to_s
   result = ''
-  for i in 1..string.length do
-    result += string[-1*i]
+  # for i in 1..string.length do
+  #   result += string[-1 * i]
+  # end
+  string.split('').each_index do |i|
+    result += string[-1 * i] if i != 0
   end
   result
 end
@@ -24,7 +27,7 @@ end
 def reverse_string_3(string)
   string = string.to_s
   result = ''
-  string.length.times{ |i| result << string[(i+1)*(-1)] }
+  string.length.times { |i| result << string[(i + 1) * -1] }
   result
 end
 
@@ -41,9 +44,10 @@ def reverse_string_4(string)
 end
 
 # this method changes original string in place
+# by adding new method to String class
 class String
   def reverse_string
-    (self.length / 2).times { |i| self[i], self[-i-1] = self[-i-1], self[i] }
+    (length / 2).times { |i| self[i], self[-i - 1] = self[-i - 1], self[i] }
     self
   end
 end
