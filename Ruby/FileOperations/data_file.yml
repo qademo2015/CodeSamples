@@ -1,0 +1,19 @@
+---
+defaults: &default
+  domain: https://
+
+local:
+  <<: *default
+  env_postfix: local-registration.com/
+
+qa:
+  <<: *default
+  env_postfix: qa-registration.com/
+
+pre:
+  <<: *default
+  env_postfix: pre-registration.com/
+
+prod:
+  <<: *default
+  env_postfix: registration.com/

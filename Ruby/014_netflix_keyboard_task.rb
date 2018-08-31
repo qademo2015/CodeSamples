@@ -10,16 +10,11 @@ def navigate_and_click(sequence)
   keyboard = [%w[A B C D], %w[E F G H], %w[I J K L], %w[M N O P], %w[Q R S T],
               %w[U V W X], ['Y', 'Z', ' ', '#']]
   char_arr = sequence.split('')
-
   char_coord = []
   char_arr.each do |elem|
-    for j in 0..(keyboard.length - 1)
-      # for i in 0..3
-      0..3.each do |i|
-        if keyboard[j][i] == elem
-          char_coord << [i, j]
-        end
-        # keyboard[j][i] == elem ? char_coord << [i, j] : "do nothing"
+    (0..(keyboard.length - 1)).each do |j|
+      (0..3).each do |i|
+        char_coord << [i, j] if keyboard[j][i] == elem
       end
     end
   end
@@ -36,20 +31,19 @@ def navigate_and_click(sequence)
     elsif x_diff > 0
       x_diff.times { puts 'Right' }
     else
-      puts 'Do nothing'
+      puts 'Idle'
     end
     if y_diff < 0
       y_diff.abs.times { puts 'Up' }
     elsif y_diff > 0
       y_diff.times { puts 'Down' }
     else
-      puts 'Do nothing'
+      puts 'Idle'
     end
     puts 'Select'
     current_x_index = next_x
     current_y_index = next_y
   end
-
 end
 
 string = 'PLHC'

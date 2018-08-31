@@ -1,28 +1,22 @@
-######################################################################
+###########################################################################
 # this file contains basic implementation of binary search - finding
 # position (index) of a target value within a sorted array
 # (it will return -1 in case if not found)
 # http://codereview.stackexchange.com/questions/63065/binary-search-in-ruby
-######################################################################
+###########################################################################
 
-# this method uses recursion
-def binary_search_1(array, value, from=0, to=nil)
+# this method uses recursion to perform binary search
+def binary_search_1(array, value, from = 0, to = nil)
   array.sort!
-  if to == nil
-    to = array.length - 1
-  end
-
-  index = -1
+  to = array.length - 1 if to.nil?
   mid = (from + to) / 2
-
   if value < array[mid]
-    index = binary_search_1(array, value, from, (mid - 1))
+    binary_search_1(array, value, from, (mid - 1))
   elsif value > array[mid]
-    index = binary_search_1(array, value, (mid + 1), to)
+    binary_search_1(array, value, (mid + 1), to)
   else
-    index = mid
+    mid
   end
-  index
 end
 
 # this method uses iteration approach
@@ -61,8 +55,8 @@ end
 #   index
 # end
 
-# this method uses iteration approach
-def binary_search_3(array, value, from=0, to=nil)
+# this method uses iteration approach w/o recursion
+def binary_search_3(array, value)
   array.sort!
   index = -1
   low = 0
@@ -81,10 +75,9 @@ def binary_search_3(array, value, from=0, to=nil)
   index
 end
 
-# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].shuffle
 arr = []
-15.times { |x| arr << x+1 }
+15.times { |x| arr << x + 1 }
 arr = arr.shuffle
-puts binary_search_1(arr, 5)
+puts binary_search_1(arr, 6)
 # puts binary_search_2(arr, 5)
-puts binary_search_3(arr, 5)
+puts binary_search_3(arr, 6)

@@ -2,3 +2,7 @@
 .idea/*
 Ruby/.idea/*
 .DS_Store
+Ruby/FileOperations/data_file.csv
+Ruby/FileOperations/data_file.txt
+Ruby/FileOperations/test_file.txt
+Ruby/FileOperations/TestDir

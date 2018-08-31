@@ -1,8 +1,8 @@
-######################################################################
+##############################################################################
 # this file contains different implementations of transition integer
-# into columns (similar to Excel)
+# into columns (similar to column titles in Excel)
 # (e.g. for 3 it will be 'A', 'B', 'C'; for 28 - 'A', 'B', 'C..Z', 'AA', 'AB')
-######################################################################
+##############################################################################
 
 
 def number_to_columns(num)
@@ -26,5 +26,5 @@ def number_to_columns(num)
   names
 end
 
-number = 53
+number = 28
 puts number_to_columns(number)
