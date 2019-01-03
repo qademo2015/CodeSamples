@@ -15,17 +15,17 @@
 #
 # Write a runnable program that obtains the maximum total
 # for any triangle of that type (the faster it runs the better).
-#####################################################################
+######################################################################
 
 # Providing data input
 # triangle - data input which represents multiline String
 
 def max_sum(triangle)
   # creating array from data input
-  arr = triangle.each_line.map{ |line| line.split.map(&:to_i) }
-  sum = arr.inject([]){ |res, x|
+  arr = triangle.each_line.map { |line| line.split.map(&:to_i) }
+  arr.inject([]) { |res, x|
     maxes = [0, *res, 0].each_cons(2).map(&:max)
-    x.zip(maxes).map{ |a, b| a+b }
+    x.zip(maxes).map{ |a, b| a + b }
   }.max
 end
 
